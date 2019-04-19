@@ -1,0 +1,48 @@
+{
+  "name": "ber-numbers",
+  "version": "0.0.1",
+  "author": "Roman Burunkov <romon2002@gmail.com>",
+  "description": "Simple BER encoding and decoding for integers.",
+  "main": "lib/ber-numbers.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint --fix . && echo 'Lint complete.'",
+    "test": "jest ./test --passWithNoTests --collect-coverage"
+  },
+  "keywords": [
+    "BER",
+    "Encode",
+    "Decode"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.7.1",
+    "prettier": "^1.16.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "plugins": [
+    ],
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2018
+    },
+    "settings": {
+    },
+    "rules": {
+      "linebreak-style": ["error", "unix"]
+    }
+  }
+}
