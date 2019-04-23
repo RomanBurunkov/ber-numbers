@@ -1,9 +1,10 @@
 {
   "name": "ber-numbers",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Roman Burunkov <romon2002@gmail.com>",
-  "description": "Simple BER encoding and decoding for integers.",
-  "main": "lib/ber-numbers.js",
+  "description": "Simple BER encoding and decoding for integers in JavaScript.",
+  "repository": "github:RomanBurunkov/ber-numbers",
+  "main": "./lib/ber-numbers.js",
   "directories": {
     "lib": "lib"
   },
@@ -16,7 +17,10 @@
     "Encode",
     "Decode"
   ],
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
