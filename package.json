@@ -10,6 +10,7 @@
   },
   "scripts": {
     "lint": "eslint --fix . && echo 'Lint complete.'",
+    "pretest": "npm run lint",
     "test": "jest ./test --passWithNoTests --collect-coverage"
   },
   "keywords": [
