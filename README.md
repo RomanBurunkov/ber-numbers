@@ -1,5 +1,6 @@
 # ber-numbers
-Simple Node.js library to help with BER encoding/decoding integers.
+
+Simple Node.js library to help with BER encoding/decoding integers.  
 Supports BER Short form and Long form from 2 to 5 octets.
 
 ### Methods:
