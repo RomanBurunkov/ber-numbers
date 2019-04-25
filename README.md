@@ -3,6 +3,8 @@
 Simple Node.js library to help with BER encoding/decoding integers.  
 Supports BER Short form and Long form from 2 to 5 octets.
 
+[![npm](https://img.shields.io/npm/v/ber-numbers.svg)](https://www.npmjs.org/package/ber-numbers)
+
 ### Methods:
 
 - **length** returns supposed total length of BER-encoded number.
