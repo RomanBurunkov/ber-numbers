@@ -1,6 +1,6 @@
 {
   "name": "ber-numbers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Roman Burunkov <romon2002@gmail.com>",
   "description": "Simple BER encoding and decoding for integers in JavaScript.",
   "repository": "github:RomanBurunkov/ber-numbers",
