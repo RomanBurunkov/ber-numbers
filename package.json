@@ -1,6 +1,6 @@
 {
   "name": "ber-numbers",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Roman Burunkov <romon2002@gmail.com>",
   "description": "Simple BER encoding and decoding for integers in JavaScript.",
   "repository": "github:RomanBurunkov/ber-numbers",
@@ -9,9 +9,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "lint": "eslint --fix . && echo 'Lint complete.'",
+    "lint": "eslint . && echo 'Lint complete.'",
+    "lint:fix": "eslint --fix . && echo 'Lint and fix complete.'",
     "pretest": "npm run lint",
-    "test": "jest ./test --passWithNoTests --collect-coverage"
+    "test": "jest ./test",
+    "test:coverage": "jest ./test --collect-coverage"
   },
   "keywords": [
     "BER",
@@ -20,34 +22,14 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "jest": "^24.7.1",
-    "prettier": "^1.16.4"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "browser": true,
-      "commonjs": true,
-      "es6": true,
-      "node": true
-    },
-    "plugins": [
-    ],
-    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2018
-    },
-    "settings": {
-    },
-    "rules": {
-      "linebreak-style": ["error", "unix"]
-    }
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-jest": "^28.10.0",
+    "jest": "^27.5.1",
+    "prettier": "^3.4.2"
   }
 }
