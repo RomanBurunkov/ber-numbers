@@ -4,8 +4,8 @@ const ber = require("./../lib/ber-numbers");
 
 describe("Test length function", () => {
   test("Should return 1 for values less then 128", () => {
-    ["1", "10", "40", "100", "127"].forEach(val =>
-      expect(ber.length(val)).toBe(1)
+    ["1", "10", "40", "100", "127"].forEach((val) =>
+      expect(ber.length(val)).toBe(1),
     );
   });
 
@@ -44,8 +44,8 @@ describe("Test decode function", () => {
     { encoded: "1F", decoded: 31 },
     { encoded: "81FF", decoded: 255 },
     { encoded: "820500", decoded: 1280 },
-    { encoded: "83000500", decoded: 1280 }
-  ].forEach(testValue => {
+    { encoded: "83000500", decoded: 1280 },
+  ].forEach((testValue) => {
     test(`Should return ${testValue.decoded} for ${testValue.encoded}`, () => {
       expect(ber.decode(testValue.encoded)).toBe(testValue.decoded);
     });
@@ -63,13 +63,13 @@ describe("Test encode function", () => {
     { encoded: 0x820500, decoded: 1280, base: undefined },
     { encoded: 0x83000500, decoded: 1280, base: 4 },
     { encoded: 0x83010000, decoded: 65536, base: undefined },
-    { encoded: 0x8401000000, decoded: 16777216, base: undefined }
-  ].forEach(testValue => {
+    { encoded: 0x8401000000, decoded: 16777216, base: undefined },
+  ].forEach((testValue) => {
     test(`Should return ${testValue.encoded} for ${testValue.decoded}, base: ${
       testValue.base
     }`, () => {
       expect(ber.encode(testValue.decoded, testValue.base)).toBe(
-        testValue.encoded
+        testValue.encoded,
       );
     });
   });
