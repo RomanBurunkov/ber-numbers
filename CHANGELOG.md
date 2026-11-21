@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added JSDoc-based TypeScript declaration generation, run automatically before packaging.
+
 ### Fixed
 
 - `calcLength` now rejects non-finite values such as `NaN`.
@@ -12,7 +16,7 @@
 
 ### Packaging
 
-- Limited published package contents to `lib` via the `files` field in `package.json`.
+- Limited published package contents to `lib` and generated declarations in `dist/types`.
 
 ### Tests
 
