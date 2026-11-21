@@ -5,6 +5,7 @@
 ### Added
 
 - Added JSDoc-based TypeScript declaration generation, run automatically before packaging.
+- Added basic Github actions CI
 
 ### Fixed
 
