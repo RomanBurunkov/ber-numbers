@@ -36,6 +36,14 @@ describe("Test calcLength function", () => {
   test(`Should return false for values greater than 4294967296`, () => {
     expect(ber.calcLength(4294967297)).toBe(false);
   });
+
+  test("Should return false for negative values", () => {
+    expect(ber.calcLength(-1)).toBe(false);
+  });
+
+  test("Should return false for NaN", () => {
+    expect(ber.calcLength(NaN)).toBe(false);
+  });
 });
 
 describe("Test decode function", () => {
